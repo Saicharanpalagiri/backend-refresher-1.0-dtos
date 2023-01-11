@@ -1,5 +1,6 @@
-import { ContentType } from 'src/enums/ContentType.enum';
+import { ContentType } from '../enums/ContentType.enum';
 import { dtoBase } from './dtoBase';
+import { OptionDto } from './option.dto';
 import { UserDto } from './user.dto';
 
 export class ContentDto extends dtoBase {
@@ -8,6 +9,6 @@ export class ContentDto extends dtoBase {
   body?: string;
   imageUrls?: string;
   videoUrl?: string;
-  users?: UserDto[]
-
+  users?: UserDto[];
+  options?: OptionDto[]
 }
